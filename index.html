@@ -90,7 +90,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-element elementor-element-2a921c06 elementor-align-center elementor-widget elementor-widget-button animated fadeIn" data-id="2a921c06" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/message/Z2ZEHAOCKYETC1">
+			<a id="btn-Chatbot" class="elementor-button elementor-button-link elementor-size-sm" href="#">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-text">CONVERSEMOS</span>
 		</span>
@@ -127,6 +127,11 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/1613e2d7-d122-4079-92fe-ca12c5ec2cae/webchat/config.js" defer></script>
 <span id="elementor-device-mode" class="elementor-screen-only"></span>
+<script>
+	document.getElementById("btn-Chatbot").addEventListener("click", function(e){
+    document.querySelector(".bpw-floating-button").click()
+}, false);
+</script>
 
 
 
