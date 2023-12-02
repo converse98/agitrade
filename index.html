@@ -133,7 +133,9 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 	document.getElementById("btn-Chatbot").addEventListener("click", function(e){
 		window.botpressWebChat.sendEvent({ type: 'show' });
 		window.botpressWebChat.sendEvent({ type: 'show' });
-		window.botpressWebChat.sendEvent({ type: 'message', text: 'Hola!' })
+		setTimeout(function () {
+			console.log(window.botpressWebChat.sendEvent({ type: 'message', text: 'Hola!' }))
+		}, 4000);
 }, false);
 </script>
 
