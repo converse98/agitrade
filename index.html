@@ -134,7 +134,9 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 		window.botpressWebChat.sendEvent({ type: 'show' });
 		window.botpressWebChat.sendEvent({ type: 'show' });
 		setTimeout(function () {
-			console.log(window.botpressWebChat.sendEvent({ type: 'message', text: 'Hola!' }))
+			if(!document.querySelector(".bpw-chat-bubble-content")){
+				window.botpressWebChat.sendEvent({ type: 'message', text: 'Hola!' })
+			}
 		}, 4000);
 }, false);
 </script>
